@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>Если корень второго числа меньше, умножаем его на 5</h3>
+    <input type="text" id="first">
+    <label for="first">- Первое число</label>
+    <br>
+    <br>
+    √-<input type="text" id="second">
+    <label for="second">- Второе число</label>
+    <br>
+    <br>
+    <button onclick="ara()">Увеличить</button>
+    <p id="resultat"></p>
+
+    <script>
+        function ara() {
+            var first = parseFloat(document.getElementById('first').value); var second = parseFloat(document.getElementById('second').value);
+            
+            if (Math.sqrt(second) < first) {
+                second *=5;
+                document.getElementById('resultat').innerText ='Корень из второго числа меньше, значить умножаем на 5 => ' + second;
+            } else {
+                document.getElementById('resultat').innerText ='Корень из второго числа не меньше первого числа';
+            }
+        }
+    </script>
+</body>
+</html>

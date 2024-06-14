@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummMaxMin</title>
+</head>
+<body>
+    
+    <h1>Сумма макс и мин цифры</h1>
+    <p>Введите трехзначное число</p>
+    <input type="text" value="235" maxlength="3" id="number">
+    <button onclick="ara()">Посчитать</button>
+    <p id="result"></p>
+
+    <script>
+
+        function ara() {
+            let num = document.getElementById('number').value;
+
+            if (isNaN(num)) {
+                document.getElementById("result").innerText = "Пожалуйста введите трехзначное число";
+                return;
+            }
+
+            
+
+            let a = parseInt(num[0]);
+            let b = parseInt(num[1]);
+            let c = parseInt(num[2]);
+
+            let min = Math.min(a, b, c,);
+            let max = Math.max(a, b, c,);
+            let sum = max+min;
+
+            document.getElementById("result").innerText= "Сумма макс и мин цифры " + sum;
+        }
+    </script>
+</body> 
+</html>

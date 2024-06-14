@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box's category</title>
+</head>
+<body>
+    
+    <p>Введите вес боксера (кг), и мы опрделим ему категорию</p>
+    <input type="number" id="ves" step="0.1" min="0" placeholder="Например 62.5">
+    <button onclick="check()">Определить категорию</button>
+    <div class="result" id="result"></div>
+
+    <script>
+        function check() {
+            const boxer = parseFloat(document.getElementById('ves').value);
+            const div = document.getElementById('result');
+            let category;
+
+            if (isNaN(boxer) || boxer <= 0) {
+                category = 'Пожалуйста, введите корректный вес.';
+            } else if (boxer < 60) {
+                category = 'Легкий вес (до 60 кг)';
+            } else if (boxer < 64) {
+                category = 'Первый полусредний вес (до 64 кг)';
+            } else if (boxer < 69) {
+                category = 'Полусредний вес (до 69 кг)';
+            } else {
+                category = 'Вес превышает указанные категории';
+            }
+
+            div.textContent = 'Категория: ' + category;
+        }
+    </script>
+</body>
+</html>

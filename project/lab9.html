@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic-light</title>
+</head>
+<body style="text-align: center;">
+    
+    <h1>Рабочий светофор</h1>
+    <h3>Красный 8 сек | Желтый 2 сек | Зеленый 4 сек</h3>
+    <img id="photo" src="red.jpg" alt="">
+
+    <br>
+    <br>
+
+    <small>кнопки для принудительной смены цвета</small>
+    <button onclick="changetored()">Красный</button>
+    <button onclick="changetoyellow()">Желтый</button>
+    <button onclick="changetogreen()">Зеленый</button>
+    <button onclick="continueChange()">Продолжить</button>
+
+    <script>
+        function changetored(){
+            const photo = document.getElementById("photo");
+            photo.src = "red.jpg";
+        }
+
+        function changetoyellow(){
+            const photo = document.getElementById("photo");
+            photo.src = "yellow.jpg";
+        }
+
+        function changetogreen(){
+            const photo = document.getElementById("photo");
+            photo.src = "green.jpg";
+        }
+
+        var images = ['red.jpg', 'yellow.jpg', 'green.jpg'];
+        var imgElement = document.getElementById('photo');
+        var index = 0;
+        var intervals = [4000, 8000, 2000];
+
+        function changeImage() {
+            imgElement.src = images[index];
+            index = (index + 1) % images.length;
+            setTimeout(changeImage, intervals[index]);
+        }
+
+        function continueChange() {
+            if (index === 1) {
+                setTimeout(changeImage, 2000);
+            } else {
+                changeImage();
+            }
+        }
+
+        window.onload = function() {
+            changeImage();
+        };
+    </script>
+</body>
+</html>

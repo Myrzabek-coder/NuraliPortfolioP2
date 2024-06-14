@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even numbers</title>
+</head>
+<body>
+    
+    <p>1.Даны четыре целых числа. Определить, сколько из них четных.
+    Вывести на экран те из них, которые являются четными.</p>
+    <p>2. Дано четырехзначное число. Определить, сколько из них четных. Вывести на экран те из них, которые являются четными.</p>
+    <p><small>Результат в консоле</small></p>
+    
+
+    <script>
+        let numbers = [12, 32, 21, 65]
+
+        function numberfortask(ara) {
+            let count = 0;
+            for (let i = 0; i < ara.length; i++) {
+                if (ara[i] % 2 === 0) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        var resultat = numberfortask(numbers)
+        console.log("Количество четных чисел в масиве '" + numbers + "' равна: " + resultat)
+
+
+
+
+
+        let number4 = 3786
+
+        const fourd = Math.floor(number4 / 1000);
+        const threrd = Math.floor((number4 % 1000) / 100);
+        const second = Math.floor((number4 % 100) / 10);
+        const first = number4 % 10;
+
+        let numbermass = [first, second, threrd, fourd]
+
+        var resmass = numberfortask(numbermass)
+        console.log("Кол-во четных цифр в числе '" + number4 + "' равна: " + resmass)
+    </script>
+</body>
+</html>

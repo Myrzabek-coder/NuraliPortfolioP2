@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check() {
+            const word = document.getElementById('inputString').value;
+            var result = '';
+
+            if (word.includes('а')) {
+                result += 'Здесь есть буква "А" <br>';
+            } else {
+                result += 'Здесь нет буквы "А" <br>';
+            }
+
+            if (word.includes('м') && word.includes('ы')) {
+                result += 'Здесь есть буквы "мы"';
+            } else {
+                result += 'Здесь нет буквы "мы" <br>';
+            }
+
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>Есть ли буква(ы) А/мы</h1>
+    
+    <input type="text" id="inputString" placeholder="Введите строку">
+
+    <button onclick="check()">Проверить</button>
+
+    <p id="result"></p>
+
+</body>
+</html>

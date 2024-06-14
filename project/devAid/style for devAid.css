@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.pt1 {
+  padding-bottom: 20px;
+  margin-top: -20px;
+  background-color: #49b9e1;
+}
+
+.logo {
+  font-size: larger;
+  font-weight: 800;
+  color: white;
+  display: block;
+  margin: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin: -40px 0px 0px 60%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.dev {
+  color: #0f4e63;
+  display: inline-flex;
+  margin-left: 580px;
+}
+
+.Aid {
+  display: inline-flex;
+  color: #f0bc3c;
+}
+
+.center {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 140%;
+  margin-top: -40px;
+}
+
+li {
+  margin: 0px 30px;
+  color: #136580;
+}
+
+.button1 {
+  margin: 0px 41%;
+}
+
+.demo {
+  margin-right: 20px;
+  font-weight: 800;
+  width: 90px;
+  height: 35px;
+  border: none;
+  color: white;
+  background-color: #f0bc3c;
+}
+
+.download {
+  height: 35px;
+  width: 140px;
+  font-weight: 800;
+  border: none;
+  background-color: #0f4e63;
+  color: white;
+}
+
+.menu2 {
+  list-style-type: none;
+  display: flex;
+  margin: 100px 0px 0px 300px;
+}
+
+.darkblue {
+  background-color: #0f4e63;
+  margin: 0vh 0vh;
+  text-align: center;
+  padding: 4px 0px;
+}
+
+.Follow {
+  color: #539cb5;
+}
+
+h2 {
+  color: #0f4e63;
+}
+
+p {
+  color: darkslategrey;
+}
+table {
+  text-align: left;
+}
+
+th {
+  color: #0f4e63;
+}
+
+td {
+  color: darkslategrey;
+  height: 120px;
+  width: 320px;
+}
+
+.foot {
+  background-color: #49b9e1;
+  padding: 10px 0px;
+}
+ul {
+  list-style-type: none;
+  margin-right: 50px;
+}
+ul.foot li::before {
+  content: "✓";
+  color: white;
+  font-weight: bold;
+}
+
+li.foot {
+  margin-top: 15px;
+}
+
+h2.foot {
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+ul.foot {
+  margin-left: 20px;
+}
+
+img {
+  display: flex;
+  margin-top: -70px;
+}

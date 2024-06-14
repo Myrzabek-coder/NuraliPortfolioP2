@@ -1,0 +1,59 @@
+body {
+    font-family: "Monttserat", sans-serif;
+  }
+  
+  tt {
+    color: red;
+    font-size: large;
+    cursor: pointer;
+  }
+  
+  .port {
+    width: 35%;
+    height: auto;
+    margin-left: 550px;
+    margin-top: -375px;
+  }
+  
+  .laptop {
+    margin-top: 200px;
+  }
+  
+  .div {
+    margin-left: 20%;
+  }
+  
+  .p2 {
+    color: gray;
+  }
+  .p3 {
+    color: gray;
+  }
+  h2 {
+    font-size: 50px;
+    color: rgb(40, 40, 70);
+  }
+  .head {
+    margin-left: 40px;
+    position: fixed;
+  }
+  .logo {
+    margin-top: -10px;
+  }
+  ul {
+    padding-left: 750px;
+    margin-top: -50px;
+  }
+  li {
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+    white-space: 20px;
+  }
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+  }
